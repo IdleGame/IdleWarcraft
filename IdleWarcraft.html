@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>IdleWarcraft</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="IdleWarcraft.css">
+</head>
+
+<body>
+
+<!-- Interface bonus -->
+
+		<div id="HudBonus">
+
+			<div id="HautHudBonus"><h2>Bonus</h2></div>
+			
+
+			<div id="BasHudBonus">
+				<div id="ItemBonus1" class="tooltip">
+					<button id="upgradeClickBois"></button>
+					<span id="woodFaster" class="tooltiptext"></span>
+				</div>
+				<div id="ItemBonus2" class="tooltip">
+					<button id="upgradeClickPierre"></button>
+					<span id="rockFaster" class="tooltiptext"></span>
+				</div>
+				<div id="ItemBonus3" class="tooltip">
+					<button id="autoClickBois"></button>
+					<span id="lumberjack" class="tooltiptext"></span>
+				</div>
+				<div id="ItemBonus4" class="tooltip">
+					<button id="autoClickPierre"></button>
+					<span id="minors" class="tooltiptext"></span>
+				</div>
+				<div id="ItemBonus5" class="tooltip">
+					<button id="batimentSoldat"></button>
+					<span id="caserne" class="tooltiptext"></span>
+				</div>
+				<div id="ItemBonus6" class="tooltip">
+					<button id="batimentDefense"></button>
+					<span id="defenseCenter" class="tooltiptext"></span>
+				</div>
+				<div id="ItemBonus7" class="tooltip">
+					<button id="newSoldat">Créer Guerrier</button>
+					<span id="soldiers" class="tooltiptext"></span>
+				</div>
+				<div id="ItemBonus8" class="tooltip">
+					<button id="murailles"></button>
+					<span id="walls" class="tooltiptext"></span>
+				</div>
+				<div id="ItemBonus9"></div>
+				<div id="ItemBonus10"></div>
+			</div>
+					
+				
+				
+		</div>
+
+		<div id="separationGauche"></div>
+
+
+
+<!-- fin interface bonus -->
+
+<!-- Boutons sauvegardes -->
+<div id="saveBtns">
+	<div id="save"></div>
+	<div id="load">
+		<!--<input type="file" class="fileUpload">-->
+	</div>
+	<!--<div id="export"></div>-->
+</div>
+
+<!-- Carte du jeu -->
+
+<div id="jeu">
+
+	<div id="y1x1"></div>
+	<div id="y1x2"></div>
+	<div id="y1x3"></div>
+	<div id="y1x4"></div>
+	<div id="y1x5"></div>
+	<div id="y1x6"></div>
+	<div id="y1x7" class="rock"></div>
+	<div id="y1x8" class="rock"></div>
+	<div id="y1x9" class="rock"></div>
+	<div id="y1x10" class="rock"></div>
+	<div id="y1x11" class="rock"></div>
+	<div id="y1x12"></div>
+	<div id="y1x13"></div>
+	<div id="y1x14"></div>
+	<div id="y2x1"></div>
+	<div id="y2x2"></div>
+	<div id="y2x3"></div>
+	<div id="y2x4"></div>
+	<div id="y2x5"></div>
+	<div id="y2x6"></div>
+	<div id="y2x7"></div>
+	<div id="y2x8" class="rock"></div>
+	<div id="y2x9" class="rock"></div>
+	<div id="y2x10" class="rock"></div>
+	<div id="y2x11"></div>
+	<div id="y2x12"></div>
+	<div id="y2x13"></div>
+	<div id="y2x14"></div>
+	<div id="y3x1"></div>
+	<div id="y3x2"></div>
+	<div id="y3x3"></div>
+	<div id="y3x4"></div>
+	<div id="y3x5"></div>
+	<div id="y3x6"></div>
+	<div id="y3x7"></div>
+	<div id="y3x8"></div>
+	<div id="y3x9"></div>
+	<div id="y3x10"></div>
+	<div id="y3x11"></div>
+	<div id="y3x12"></div>
+	<div id="y3x13"></div>
+	<div id="y3x14"></div>
+	<div id="y4x1"></div>
+	<div id="y4x2"></div>
+	<div id="y4x3"></div>
+	<div id="y4x4"></div>
+	<div id="y4x5"></div>
+	<div id="y4x6"></div>
+	<div id="y4x7"></div>
+	<div id="y4x8"></div>
+	<div id="y4x9"></div>
+	<div id="y4x10"></div>
+	<div id="y4x11"></div>
+	<div id="y4x12"></div>
+	<div id="y4x13"></div>
+	<div id="y4x14"></div>
+	<div id="y5x1"></div>
+	<div id="y5x2"></div>
+	<div id="y5x3"></div>
+	<div id="y5x4"></div>
+	<div id="y5x5"></div>
+	<div id="y5x6"></div>
+	<div id="y5x7"></div>
+	<div id="y5x8"></div>
+	<div id="y5x9"></div>
+	<div id="y5x10"></div>
+	<div id="y5x11" class="BatimentBase"></div>
+	<div id="y5x12"></div>
+	<div id="y5x13"></div>
+	<div id="y5x14"></div>
+	<div id="y6x1"></div>
+	<div id="y6x2"></div>
+	<div id="y6x3"></div>
+	<div id="y6x4"></div>
+	<div id="y6x5"></div>
+	<div id="y6x6"></div>
+	<div id="y6x7"></div>
+	<div id="y6x8"></div>
+	<div id="y6x9"></div>
+	<div id="y6x10"></div>
+	<div id="y6x11"></div>
+	<div id="y6x12"></div>
+	<div id="y6x13"></div>
+	<div id="y6x14"></div>
+	<div id="y7x1"></div>
+	<div id="y7x2"></div>
+	<div id="y7x3"></div>
+	<div id="y7x4"></div>
+	<div id="y7x5"></div>
+	<div id="y7x6"></div>
+	<div id="y7x7"></div>
+	<div id="y7x8"></div>
+	<div id="y7x9"></div>
+	<div id="y7x10" class="wood"></div>
+	<div id="y7x11"></div>
+	<div id="y7x12"></div>
+	<div id="y7x13"></div>
+	<div id="y7x14"></div>
+	<div id="y8x1"></div>
+	<div id="y8x2"></div>
+	<div id="y8x3"></div>
+	<div id="y8x4"></div>
+	<div id="y8x5"></div>
+	<div id="y8x6"></div>
+	<div id="y8x7"></div>
+	<div id="y8x8"></div>
+	<div id="y8x9" class="wood"></div>
+	<div id="y8x10" class="wood"></div>
+	<div id="y8x11" class="wood"></div>
+	<div id="y8x12" class="wood"></div>
+	<div id="y8x13"></div>
+	<div id="y8x14"></div>
+	<div id="y9x1"></div>
+	<div id="y9x2"></div>
+	<div id="y9x3"></div>
+	<div id="y9x4"></div>
+	<div id="y9x5"></div>
+	<div id="y9x6"></div>
+	<div id="y9x7"></div>
+	<div id="y9x8" class="wood"></div>
+	<div id="y9x9" class="wood"></div>
+	<div id="y9x10" class="wood"></div>
+	<div id="y9x11" class="wood"></div>
+	<div id="y9x12" class="wood"></div>
+	<div id="y9x13" class="wood"></div>
+	<div id="y9x14"></div>
+</div>
+
+
+<!-- fin carte du jeu -->
+
+
+<!-- Interface ressources -->
+		<div id="separationDroite"></div>
+
+		<div id="HudRessources">
+
+			<div id="HautHudRessources"><h2>Ressources</h2></div>
+			<div id="BasHudRessources">
+				<div id="Ressource1">
+					
+					<p id="nbClickBois"></p>
+					
+
+				</div>
+				<div id="Ressource2">
+					
+					<p id="nbClickPierre"></p>
+
+				</div>
+
+				<div id="Ressource3">
+					<p id="clickerAutoBois"></p>
+				</div>
+
+				<div id="Ressource4">
+					<p id="clickerAutoPierre"></p>
+				</div>
+
+				<div id="Ressource5">
+					<p id="nbSoldat"></p>
+				</div>
+
+				<div id="Ressource6">
+					<p id="afficheEnnemi"></p>
+				</div>
+
+				<div id="Ressource7">
+					<p id="afficheVieMuraille"></p>
+				</div>
+			</div>
+
+		</div>			
+
+		<div id="events">
+			<div id="imgEvents"></div>
+			<div id="txtEvents"></div>
+		</div>
+
+		<div id="bienvenue">
+			<div id="imgBienvenue"></div>
+			<div id="txtBienvenue"></div>
+			<button id="boutonBienvenue" class="closeAlerte" onclick="fermerBienvenue()">Au travail !</button>
+		</div>
+
+		<div id="footer"><span>IdleWarcraft © by <a href="https://nimarell.github.io/resume/" target="_blank">Nimarell</a>, <a href="" target="_blank">Ibra</a>, <a href="" target="_blank">Val</a> & <a href="https://carole-llamas.fr" target="_blank">Rol-k</a>, 2019</span><span id="gameVersion">Version 1.0</span></div>
+
+	<script type="text/javascript" src="IdleWarcraft.js"></script>
+</body>
+
+</html>
